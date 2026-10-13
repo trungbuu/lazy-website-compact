@@ -41,4 +41,4 @@ python3 scripts/check_static.py <thu-muc-website-cong-khai>
 
 ## Landing page
 
-Trang giới thiệu nằm tại `docs/index.html` và có thể phát hành trực tiếp bằng GitHub Pages. Form nhận tài liệu trên trang chỉ xác thực ba trường và mở liên kết trong trình duyệt; repo không tự gửi hay lưu lead vào CRM. Muốn lưu đăng ký, hãy nối form với endpoint thuộc hệ thống của bạn và cập nhật thông báo quyền riêng tư trước khi phát hành.
+Trang giới thiệu nằm tại `docs/index.html` và có thể phát hành trực tiếp bằng GitHub Pages. Form nhận tài liệu đã nối với Lead Magnet OS: hệ thống lưu họ tên, email, lĩnh vực cùng nguồn truy cập, gửi email kết quả và chỉ hiện đường dẫn tài liệu sau khi đăng ký được ghi nhận thành công.
