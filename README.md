@@ -2,6 +2,9 @@
 
 Skill gọn để tạo, sửa và bàn giao website giới thiệu dùng được từ tài liệu trên máy hoặc Google Drive. Phù hợp với landing page, portfolio, trang dịch vụ, trang chia sẻ tài liệu và website doanh nghiệp nhỏ.
 
+- [Xem landing page](https://trungbuu.github.io/lazy-website-compact/)
+- [Tải ZIP từ GitHub](https://github.com/trungbuu/lazy-website-compact/archive/refs/heads/main.zip)
+
 ## Cài nhanh
 
 ```bash
@@ -39,4 +42,3 @@ python3 scripts/check_static.py <thu-muc-website-cong-khai>
 ## Landing page
 
 Trang giới thiệu nằm tại `docs/index.html` và có thể phát hành trực tiếp bằng GitHub Pages. Form nhận tài liệu trên trang chỉ xác thực ba trường và mở liên kết trong trình duyệt; repo không tự gửi hay lưu lead vào CRM. Muốn lưu đăng ký, hãy nối form với endpoint thuộc hệ thống của bạn và cập nhật thông báo quyền riêng tư trước khi phát hành.
-
