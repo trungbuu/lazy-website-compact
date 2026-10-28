@@ -9,7 +9,8 @@
   <meta property="og:title" content="lazy Website Compact">
   <meta property="og:description" content="Từ tài liệu sẵn có đến một website dùng được, có điểm liên hệ thật và được kiểm tra trước khi bàn giao.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://trungbuu.github.io/lazy-website-compact/">
+  <meta property="og:url" content="https://toiuu.vn/lazy-website-compact/">
+  <link rel="canonical" href="https://toiuu.vn/lazy-website-compact/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f15a24'/%3E%3Cpath d='M18 18h10v20h18v8H18z' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,8 @@
     button, a { -webkit-tap-highlight-color: transparent; }
     :focus-visible { outline: 3px solid rgba(241, 90, 36, .35); outline-offset: 4px; }
     h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; text-wrap: balance; }
-    p, li, label { text-wrap: pretty; }
+    h1, h2, h3, p, li, label, a, button, span { hyphens: none; word-break: normal; }
+    p, li, label { overflow-wrap: normal; text-wrap: pretty; }
     p { margin-top: 0; }
     .wrap { width: min(var(--wrap), calc(100% - 40px)); margin-inline: auto; }
     .skip-link { position: fixed; top: -80px; left: 16px; z-index: 100; padding: 10px 14px; border-radius: 8px; background: var(--ink); color: white; }
@@ -81,12 +83,8 @@
     .step::before { content: "0" counter(step); color: var(--accent-dark); font-size: 13px; font-weight: 700; }
     .step h3 { font-size: 26px; line-height: 1.2; }
     .step p { margin: 0; color: var(--body); font-size: 14px; }
-    .guide-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 52px; align-items: start; }
-    .guide-nav { position: sticky; top: 98px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
-    .guide-nav h3 { margin-bottom: 14px; font-size: 24px; }
-    .guide-nav ol { margin: 0; padding-left: 20px; color: var(--body); font-size: 13px; }
-    .guide-nav li + li { margin-top: 9px; }
-    .guide-content { display: grid; gap: 16px; }
+    .guide-grid { display: grid; grid-template-columns: 1fr; }
+    .guide-content { display: grid; gap: 16px; width: 100%; }
     .guide-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
     .guide-card .tag { display: inline-block; margin-bottom: 16px; color: var(--accent-dark); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
     .guide-card h3 { margin-bottom: 10px; font-size: 28px; line-height: 1.15; }
@@ -123,9 +121,9 @@
     .lead-copy .section-kicker { color: #ff9b70; }
     .lead-copy h2 { margin: 13px 0 18px; font-size: clamp(34px, 4.8vw, 54px); line-height: 1.08; }
     .lead-copy p { color: #d9d2cc; }
-    .lead-copy .promise { margin-top: 28px; padding-top: 22px; border-top: 1px solid #4a4540; font-size: 13px; }
     .form-wrap { padding: clamp(30px, 5vw, 52px); background: #302c28; }
     .resource-form { display: grid; gap: 16px; }
+    .resource-form[hidden] { display: none; }
     .field { display: grid; gap: 7px; }
     .field label { color: #f7f3ef; font-size: 13px; font-weight: 600; }
     .field input, .field select { width: 100%; min-height: 50px; padding: 11px 13px; border: 1px solid #5e5750; border-radius: 10px; background: #3b3632; color: white; }
@@ -156,7 +154,6 @@
       .case h3 { margin-top: 25px; }
       .step { grid-template-columns: 58px 1fr; gap: 18px; }
       .step p { grid-column: 2; }
-      .guide-nav { position: static; }
       .about-card { grid-template-columns: 170px 1fr; gap: 32px; padding: 32px; }
     }
     @media (max-width: 560px) {
@@ -178,7 +175,7 @@
       .step { grid-template-columns: 38px 1fr; gap: 14px; }
       .step h3 { font-size: 23px; }
       .source-choice { grid-template-columns: 1fr; }
-      .guide-card, .guide-nav { padding: 22px; }
+      .guide-card { padding: 22px; }
       .about-card { grid-template-columns: 1fr; gap: 25px; padding: 26px; }
       .portrait { width: 158px; }
       .about h2 { font-size: 37px; }
@@ -238,7 +235,6 @@
       <div class="wrap">
         <header class="section-head"><p class="section-kicker">Hướng dẫn chi tiết</p><div><h2>Cài một lần, sau đó mô tả website bằng ngôn ngữ bình thường</h2><p class="section-intro">Bạn không cần chuẩn bị prompt dài. Điều quan trọng là đưa đúng nguồn, cho biết khách truy cập là ai và chỉ rõ hành động muốn họ thực hiện.</p></div></header>
         <div class="guide-grid">
-          <aside class="guide-nav" aria-label="Tóm tắt các bước"><h3>Năm bước sử dụng</h3><ol><li>Tải và đặt skill vào thư mục skills.</li><li>Chọn nguồn trên máy hoặc Google Drive.</li><li>Gửi một câu lệnh có mục tiêu và CTA.</li><li>Duyệt nội dung, nhận diện và dữ liệu.</li><li>Kiểm bản chạy rồi mới xuất bản.</li></ol></aside>
           <div class="guide-content">
             <article class="guide-card"><span class="tag">Bước 1</span><h3>Tải skill từ GitHub</h3><p>Tải ZIP rồi giải nén, hoặc clone repo. Giữ nguyên cấu trúc để agent đọc được <code>SKILL.md</code>, hướng dẫn và script kiểm tra.</p><pre>git clone https://github.com/trungbuu/lazy-website-compact.git</pre></article>
             <article class="guide-card"><span class="tag">Bước 2</span><h3>Đặt vào thư mục skills</h3><p>Chép cả thư mục <code>lazy-website-compact</code> vào nơi công cụ AI của bạn dùng để nạp skill. Nếu chưa rõ đường dẫn, hãy yêu cầu agent xác định thư mục skills hiện hành.</p></article>
@@ -261,16 +257,16 @@ rồi báo phần còn cần tôi duyệt.</pre></article>
       <div class="wrap"><div class="download-card"><div class="download-copy"><p class="section-kicker">Mã nguồn mở</p><h2>Tải về, đọc rule và sửa theo cách làm của bạn</h2><p>Repo gồm skill, hướng dẫn sử dụng, quy trình nhận nguồn và script kiểm tra website tĩnh. Bạn có thể xem toàn bộ trước khi cài.</p><div class="actions"><a class="button primary" href="https://github.com/trungbuu/lazy-website-compact/archive/refs/heads/main.zip">Tải ZIP</a><a class="button" href="https://github.com/trungbuu/lazy-website-compact" target="_blank" rel="noopener">Mở GitHub</a></div></div><div class="repo-panel"><code>github.com/trungbuu/lazy-website-compact</code><ul><li>Nguồn đầu vào: máy tính hoặc Google Drive.</li><li>Đầu ra: website chạy được, kèm phần kiểm tra.</li><li>Giấy phép và lịch sử thay đổi xem trực tiếp trên repo.</li></ul></div></div></div>
     </section>
     <section class="lead-section" id="claude-guide">
-      <div class="wrap"><div class="lead-card"><div class="lead-copy"><p class="section-kicker">Tài liệu tặng kèm</p><h2>Nhận bộ prompt hướng dẫn dùng Claude</h2><p>Điền ba thông tin để hệ thống ghi nhận đăng ký và gửi tài liệu qua email. Sau khi lưu thành công, đường dẫn cũng hiện ngay trên trang.</p><p class="promise">Thông tin được đồng bộ vào Lead Magnet OS của Bửu Trung. Dữ liệu chỉ được dùng để gửi tài liệu này và vận hành đăng ký theo nội dung bạn đồng ý.</p></div><div class="form-wrap">
+      <div class="wrap"><div class="lead-card"><div class="lead-copy"><p class="section-kicker">Tài liệu tặng kèm</p><h2>Nhận bộ quy trình làm việc tối ưu cùng Claude</h2></div><div class="form-wrap">
         <form class="resource-form" id="resource-form" novalidate>
           <div class="field"><label for="name">Họ và tên</label><input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Nguyễn An"></div>
           <div class="field"><label for="email">Email nhận tài liệu</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160" placeholder="ban@example.com"></div>
           <div class="field"><label for="industry">Lĩnh vực đang làm</label><select id="industry" name="industry" required><option value="">Chọn lĩnh vực</option><option>Marketing và truyền thông</option><option>Kinh doanh và bán hàng</option><option>Đào tạo và tư vấn</option><option>Dược phẩm và làm đẹp</option><option>Công nghệ và sản phẩm số</option><option>Lĩnh vực khác</option></select></div>
           <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
-          <label class="consent" for="consent-report"><input id="consent-report" name="consentReport" type="checkbox" required><span>Tôi đồng ý để Bửu Trung lưu thông tin trên và gửi tài liệu Claude qua email. Tôi có thể yêu cầu ngừng nhận hoặc xóa dữ liệu bất cứ lúc nào.</span></label>
+          <label class="consent" for="consent-report"><input id="consent-report" name="consentReport" type="checkbox" required><span>Tôi đồng ý để Bửu Trung lưu thông tin trên và gửi đường dẫn tài liệu Claude qua email. Tôi có thể yêu cầu ngừng nhận hoặc xóa dữ liệu bất cứ lúc nào.</span></label>
           <button class="button primary submit" type="submit">Đăng ký và mở tài liệu</button><p class="form-status" id="form-status" role="status" aria-live="polite"></p><p class="form-note">Không nhập mật khẩu, khóa API hoặc dữ liệu nhạy cảm vào biểu mẫu.</p>
         </form>
-        <div class="success" id="success" hidden tabindex="-1"><h3>Đăng ký đã hoàn tất</h3><p>Hệ thống đã ghi nhận thông tin. Bạn có thể mở tài liệu ngay và kiểm tra email để lưu lại đường dẫn.</p><a class="button light" href="https://lazyai.vn/sharing/claude-prompt/" target="_blank" rel="noopener">Mở tài liệu Claude</a></div>
+        <div class="success" id="success" hidden tabindex="-1"><h3>Đăng ký đã hoàn tất</h3><p>Hệ thống đã ghi nhận thông tin. Bạn có thể mở bộ quy trình ngay và kiểm tra email để lưu lại đường dẫn.</p><a class="button light" href="https://lazyai.vn/sharing/claude-prompt/" target="_blank" rel="noopener">Mở bộ quy trình Claude</a></div>
       </div></div></div>
     </section>
   </main>
@@ -279,8 +275,9 @@ rồi báo phần còn cần tôi duyệt.</pre></article>
   <script>
     (function () {
       'use strict';
-      var endpoint = 'https://script.google.com/macros/s/AKfycbxNLQb44SAiCv6Oi7vBS7RwLPDTW4DS4mG0h47JzLNbieCBuZs6TgLi-ra3dY-K2L5gXw/exec';
+      var endpoint = 'https://script.google.com/macros/s/AKfycbzUw9zOXMKEQjuDwpl3KbAax1reEyEoaIwRSpClotS2ulOxr_ZDWtUKGVjsWv0kRBBTwQ/exec';
       var campaignId = 'lazy_website_claude_prompt_v1';
+      var loadedAt = Date.now();
       var form = document.getElementById('resource-form');
       var status = document.getElementById('form-status');
       var success = document.getElementById('success');
@@ -290,11 +287,10 @@ rồi báo phần còn cần tôi duyệt.</pre></article>
       function payloadFrom(data) {
         var query = new URLSearchParams(window.location.search);
         return {
-          submission_id: submissionId(), submitted_at: new Date().toISOString(), campaign_id: campaignId,
-          assessment_version: '1.0.0', assessment_type: 'decision_tree_first_gap', question_count: 3,
+          action: 'lazy_website_lead', submission_id: submissionId(), submitted_at: new Date().toISOString(), campaign_id: campaignId,
           name: data.get('name') || '', email: data.get('email') || '', industry: data.get('industry') || '', department: '', role: '',
           consent_report: data.get('consentReport') === 'on', consent_marketing: false, website: data.get('website') || '',
-          answers: { q01: 5, q02: 5, q03: 5 }, confidence_level: 'self_assessed', source: 'lazy_website_compact_landing',
+          elapsed_ms: Date.now() - loadedAt, source: 'lazy_website_compact_landing',
           page_url: window.location.href, referrer: document.referrer || '', utm_source: query.get('utm_source') || '',
           utm_medium: query.get('utm_medium') || '', utm_campaign: query.get('utm_campaign') || '',
           utm_content: query.get('utm_content') || '', utm_term: query.get('utm_term') || ''

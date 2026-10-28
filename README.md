@@ -41,4 +41,4 @@ python3 scripts/check_static.py <thu-muc-website-cong-khai>
 
 ## Landing page
 
-Trang giới thiệu nằm tại `docs/index.html` và có thể phát hành trực tiếp bằng GitHub Pages. Form nhận tài liệu đã nối với Lead Magnet OS: hệ thống lưu họ tên, email, lĩnh vực cùng nguồn truy cập, gửi email kết quả và chỉ hiện đường dẫn tài liệu sau khi đăng ký được ghi nhận thành công.
+Trang giới thiệu nằm tại `docs/index.html` và có thể phát hành trực tiếp bằng GitHub Pages. Form nhận tài liệu đã nối với Lead Magnet OS: hệ thống lưu họ tên, email, lĩnh vực cùng nguồn truy cập, gửi email chỉ chứa đường dẫn tài liệu và chỉ hiện đường dẫn trên trang sau khi đăng ký được ghi nhận thành công. Campaign này không tạo Google Docs hoặc link báo cáo riêng.

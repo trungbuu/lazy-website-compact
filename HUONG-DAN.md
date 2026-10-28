@@ -15,7 +15,7 @@ Logo, ảnh, màu thương hiệu, bảng giá, FAQ, bài giới thiệu, phản
 
 ## 2. Chọn nguồn nội dung
 
-### Cách A — File trên máy
+### Dùng file trên máy
 
 Đính kèm file hoặc gửi đường dẫn đến thư mục/file trong máy. Có thể dùng văn bản, PDF, ảnh và các file tài liệu mà môi trường làm việc đọc được. Nói rõ đâu là bản mới nhất nếu có nhiều phiên bản.
 
@@ -23,7 +23,7 @@ Ví dụ:
 
 > Dùng lazy-website-compact để làm website một trang cho dịch vụ tư vấn của tôi. Nguồn ở `/duong-dan/thu-muc-tai-lieu/`, logo ở `/duong-dan/logo.png`. Khách chính là chủ doanh nghiệp nhỏ; CTA là `mailto:hello@example.com`. Hãy cho xem bản preview trước khi publish.
 
-### Cách B — Google Drive
+### Dùng Google Drive
 
 Gửi link **file hoặc thư mục cụ thể** và cho biết tài liệu nào là nguồn chính. Cần có kết nối Drive hoặc quyền đọc phù hợp. Nếu môi trường chưa truy cập được, hãy xuất tài liệu ra máy rồi dùng Cách A. File riêng tư trong Drive không được nhúng trực tiếp vào website cho khách xem.
 
@@ -54,17 +54,19 @@ Nếu đã có website, gửi thêm đường dẫn project và chỉ rõ trang/
 
 ## 4. Quy trình bạn sẽ thấy
 
-1. **Nhận nguồn và chốt nội dung.** Skill lọc tài liệu liên quan, xác định đối tượng, thông điệp, CTA và đánh dấu dữ liệu chưa chắc chắn.
-2. **Chọn cấu trúc.** Với site nội dung ít trang, thường dùng website tĩnh để dễ chạy và bàn giao. Nếu có nhiều bài viết hoặc yêu cầu cập nhật thường xuyên, có thể đề xuất cách quản lý nội dung phù hợp.
-3. **Dựng bản chạy được.** Trang có bố cục, nội dung, ảnh được phép dùng, điều hướng và CTA thực tế. Không xem mockup là sản phẩm cuối.
-4. **Kiểm tra.** Chạy build/kiểm link và tài sản, mở ở màn hình nhỏ và lớn, thử CTA; nếu có form thật thì thử gửi tới nơi nhận.
-5. **Bàn giao.** Bạn nhận vị trí project, cách chạy/build, các bước publish (nếu chưa publish), kết quả kiểm tra và danh sách điều cần duyệt.
+1. Skill nhận nguồn và chốt nội dung. Agent lọc tài liệu liên quan, xác định đối tượng, thông điệp, CTA và đánh dấu dữ liệu chưa chắc chắn.
+2. Skill chọn cấu trúc. Với site nội dung ít trang, agent thường dùng website tĩnh để dễ chạy và bàn giao. Nếu có nhiều bài viết hoặc yêu cầu cập nhật thường xuyên, agent có thể đề xuất cách quản lý nội dung phù hợp.
+3. Agent dựng bản chạy được, gồm bố cục, nội dung, ảnh được phép dùng, điều hướng và CTA thực tế. Mockup không được xem là sản phẩm cuối.
+4. Agent kiểm link và tài sản, mở trang ở màn hình nhỏ và lớn, rồi thử CTA. Form thật phải được gửi thử tới nơi nhận.
+5. Khi bàn giao, bạn nhận vị trí project, cách chạy hoặc build, các bước publish nếu chưa xuất bản, kết quả kiểm tra và danh sách điều cần duyệt.
 
 Nếu có thông tin mâu thuẫn ảnh hưởng đến nội dung công khai như giá, cam kết hoặc địa chỉ, skill sẽ hỏi bạn chọn bản chuẩn. Website chưa được duyệt có thể là preview; không mặc nhiên đưa lên production.
 
 ## 5. Cách tự nghiệm thu
 
 Mở trang trên điện thoại và máy tính. Kiểm xem tiêu đề nói rõ bạn làm gì, nội dung đúng sự thật, chữ đọc được, không phải kéo ngang, menu dùng được, các nút dẫn đúng nơi và không có chỗ để trống. Thử CTA như một khách mới; nếu là form, xác nhận tin nhắn thật sự tới nơi nhận. Đọc phần bàn giao để biết phép kiểm nào đã chạy và giới hạn nào chưa được xác minh.
+
+Với website tiếng Việt, yêu cầu agent chạy Vietnamese Guide và `nhuan-sac`. Bản đạt yêu cầu phải viết hoa theo câu, không dùng em dash trong văn xuôi, giữ cách xưng hô nhất quán và không tách sai từ ghép. Nếu môi trường có `vi-type.js` và `vi-audit.js`, kết quả `soLoi` phải bằng 0 ở cả 390 px và 1440 px.
 
 Website tĩnh thường chỉ cần trình duyệt và host tĩnh; form, đặt lịch, thanh toán hoặc đăng nhập cần dịch vụ xử lý riêng. Nếu chưa có nơi nhận form, nên dùng liên hệ qua email/điện thoại/URL lịch hẹn trước, sau đó mới thêm form.
 
